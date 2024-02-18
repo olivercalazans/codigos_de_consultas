@@ -1,3 +1,3 @@
-# Codigos-de-consultas
+# Codigos_de_consultas
 
-Códigos que criei enquanto estudava. Uso apenas para consulta, quando necessário.
+Esse repositório é usado para salvar os códigos que desenvolvi enquanto estudava. Como tenho o costume de revê-los, decidi criar um repositório para eles.
