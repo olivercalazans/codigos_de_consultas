@@ -1,20 +1,23 @@
-def cria_conta(numero, titular, saldo, limite):
-    conta = {'numero': numero, 'titular': titular, 'saldo': saldo, 'limite': limite}
-    return conta
+class Conta:
+    def __init__(self, numero, titular, saldo, limite):
+        self.numero = numero
+        self.titular = titular
+        self.saldo = saldo
+        self.limite = limite
 
-def depositar(conta, valor):
-    conta['saldo'] += valor
+    def depositar(self, valor):
+        self.saldo += valor
 
-def saca(conta, valor):
-    conta['saldo'] -= valor
+    def saca(self, valor):
+        self.saldo -= valor
 
-def extrato(conta):
-    print('Número: {}\nSaldo: {}'.format(conta['numero'], conta['saldo']))
+    def extrato(self):
+        print(f'Titular: {self.titular}\nNúmero: {self.numero}\nSaldo: {self.saldo}\nLimite: {self.limite}')
+
+    def transfere(self, destino, valor):
+        self.saldo -= valor
+        destino.saldo += valor
 
 
-conta = cria_conta('123-7', 'João', 500.0, 1000.0)
-depositar(conta, 50.0)
-extrato(conta)
-
-saca(conta, 20)
-extrato(conta)
+c1 = Conta('123-7', 'João', 500.0, 1000.0)
+c1.extrato()
