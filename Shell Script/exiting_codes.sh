@@ -7,3 +7,5 @@
 
 echo "Hello, world"
 exit 0
+
+# Quando o comando exit de um script é usado sem um argumento de código de saída, o script retorna o código de saída do último comando que foi executado dentro do script.
