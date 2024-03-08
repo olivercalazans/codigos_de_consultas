@@ -25,10 +25,11 @@ print(f'Ex. 2: {result}')
 
 
 
-##### FORMA ESTRUTURAL 3: lista = [var.1  if.1  else  var.2  if.2]
+##### FORMA ESTRUTURAL 3: lista = [var.1  if.1<condição>  else  var.2  if.2<condição>  else  var.3  for<condição>]
 # |
 # |- É possível usar mais de um 'if'.
 # |- Por não ser possível usar o 'elif', usa-se else entre os 'if'.
+# |- Quando tiver mais de um 'if', é obrigatório usar um 'else' pra cada um.
 #
 # Ex. 3:
 numbers = [1, 2, 3, 4, 5, 6]
