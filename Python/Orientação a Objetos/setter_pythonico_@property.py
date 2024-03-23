@@ -1,4 +1,4 @@
-# - Em Python, os métodos não precisam do '_set' antes do nome.
+# - Em Python, os métodos não precisam do 'set' antes do nome.
 # - E dois ou mais métodos podem ter o mesmo nome, desde que o decorador seja diferente.
 
 class Caneta:
