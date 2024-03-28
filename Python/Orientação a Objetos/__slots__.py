@@ -59,3 +59,20 @@ print(sys.getsizeof(p1_com_slots))           # Tamanho de p1_com_slots
 #
 # - Apesar de não ser o proposito do '__slots__', ele pode auxiliar no encapsulamento e na proteção
 #   dos dados, já que ele impede a criação novos atributos e acessa mais rapidamente os valores.
+#
+# - No caso de herança de classes, quando a classe herdeira for colocar os atrbutos no '__slots__',
+#   será necessário declarar os atributos que serão herdadeos da classe pai.
+
+class Matematica1:
+    __slots__ = ['base_maior', 'base_menor']
+
+    def __init__(self, base_maior, base_menor):
+        self.base_maior = base_maior
+        self.base_menor = base_menor
+    
+class Matematica2(Matematica1):
+    __slots__ = ['base_superior', 'base_inferior', 'altura']  # Também declara os atributos da classe pai.
+
+    def __init__(self, base_superior, base_inferior, altura):
+        super().__init__(base_superior, base_inferior)
+        self.altura = altura
