@@ -1,3 +1,5 @@
+###### EXPLICAÇÃO GERAL:
+#
 # - Um mixin é uma classe projetada apenas para hospedar um conjunto de métodos que podem ser 
 #   herdados por outras classes. Ao contrário da herança tradicional, onde a classe base define
 #   a estrutura e o comportamento das classes derivadas, os mixins focam em fornecer recursos
