@@ -1,3 +1,5 @@
+###### EXPLICAÇÃO GERAL:
+#
 # - O "problema do diamante" em Python refere-se a uma situação em que uma classe herda de duas
 #   classes que têm uma classe base em comum. Isso pode levar a ambiguidades e conflitos de
 #   métodos e atributos.
