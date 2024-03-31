@@ -1,3 +1,5 @@
+###### EXPLICAÇÃO GERAL:
+#
 # - É um método que é usado para obter o valor de um atributo privado de uma classe.
 #   É uma forma de controlar os dados de saída da classe.
 #
