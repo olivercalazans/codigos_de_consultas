@@ -1,3 +1,5 @@
+###### EXPLICAÇÃO GERAL:
+#
 # - A principal função do '__slots__' é otimizar o uso da memória RAM. Quando um instância
 #   é criada, a classe cria um dicionário com todos os atributos. Os dicinários usam muita
 #   memória, e com um grande número de objetos criados, a memória é usada excessivamente.
@@ -9,6 +11,7 @@
 #   evita o uso excessivo de memória que os dicionários usam.
 # 
 # - O exemplo abaixo mostra a diferença do uso de memória ao usar e não usar o '__slots__'.
+#
 
 import sys
 
@@ -32,7 +35,6 @@ p2_com_slots = PessoaComSlots('Bob', 25)
 
 print(sys.getsizeof(p1_sem_slots.__dict__))  # Tamanho do dicionário de p1_sem_slots
 print(sys.getsizeof(p1_com_slots))           # Tamanho de p1_com_slots
-
 
 # - Os nomes passados no '__slots__' não precisam ser iguais aos nomes dos atributos passados
 #   no '__init__'. Mas é uma boa prática deixa-los iguais.
