@@ -1,18 +1,23 @@
+###### EXPLICAÇÃO GERAL:
+#
 # - A principal função de um setter é fornecer um ponto centralizado para controlar como
 #   os atributos de um objeto são modificados. Isso significa que, ao usar um setter, 
 #   você pode adicionar lógica adicional para garantir que os valores atribuídos estejam
 #   dentro de limites aceitáveis ou atendam a certos critérios de validação.
-
+#
 # - Alguns exemplos:
 #       -> Verificar se o novo valor está dentro de um intervalo aceitável.
 #       -> Converter o formato do valor (por exemplo, de uma string para um tipo numérico).
 #       -> Executar uma ação específica sempre que o valor for modificado (por exemplo, atualizar um registro em um banco de dados).
 #       -> Disparar notificações ou eventos relacionados à modificação do valor.
-
+#
 # - Mas a função primária do setter é modificar o valor de um atributo.
+#
 # - Mesmo nos exemplos acima, os valores são modificados. Pode ocorrer a apenas a modificação
 #   ou uma lógica pode estar no escopo dela.
+#
 # - Ele é fundamental no princípio do encapsulamento.
+#
 # - Usar setter ajuda a evitar a quebra do código do cliente.
 
 # EXEMPLO 1: MODIFICADOR DE VALOR.
@@ -43,7 +48,6 @@ pessoa.set_nome(123)  # Isso gera um ValueError
 # Isso garante que apenas valores válidos sejam atribuídos ao atributo _nome. 
 
 
-
 # EXEMPLO 2: VERIFICAÇÃO DE VALOR PARA PODER ALTERAR.
 class Retângulo:
     def __init__(self, largura, altura):
@@ -66,7 +70,6 @@ class Retângulo:
 # largura e altura são maiores que zero. Se não forem, eles levantam um erro.
         
 
-
 # EXEMPLO 3: REALIZANDO CÁLCULO ESPECÍFICO
 class Círculo:
     def __init__(self, raio):
@@ -82,7 +85,6 @@ class Círculo:
 
 # Neste exemplo, sempre que o raio de um círculo é modificado, a circunferência
 # é recalculada e atualizada internamente.
-
 
 
 # EXEMPLO 4: ATUALIZANDO ATRIBUTOS RELACIONADOS
