@@ -1,6 +1,8 @@
-# Os atributos de classe são variáveis que são definidas dentro da classe mas fora de qualquer método.
-# Eles podem ser acessados pelos metodos ou por chamadas da classe.
-# É possivel acessa-los usando o "self" mas não é recomendado. Melhor usar o nome da classe.
+###### EXPLICAÇÃO GERAL:
+#
+# - Os atributos de classe são variáveis que são definidas dentro da classe mas fora de qualquer método.
+# - Eles podem ser acessados pelos metodos ou por chamadas da classe.
+# - É possivel acessa-los usando o "self" mas não é recomendado. Melhor usar o nome da classe.
 
 class Pessoa:
     ANO_ATUAL = 2024
