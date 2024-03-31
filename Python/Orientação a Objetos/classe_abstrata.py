@@ -1,3 +1,5 @@
+###### EXPLICAÇÃO GERAL:
+#
 # - Classes abstratas são classes que não podem ser instanciada, não criam objetos, mas servem de base
 #   para subclasses usarem.
 # 
