@@ -1,3 +1,5 @@
+###### EXPLICAÇÃO GERAL:
+#
 # - Para evitar a repetição de códigos, POO tem o conceito de herança. A herança é o uso de uma classe 
 #   existente dentro de outra. Com isso, todos os atributos e métodos da classe pai podem
 #   ser usados na classe filho (herdeira).
@@ -35,7 +37,6 @@ print(objeto_c.y)  # Saída: 20
 print(objeto_c.z)  # Saída: 30
 
 
-
 #   --> Usando atributos da classe pai na herdeira, versão 2:
 #       - Uma outra forma de acessar o python é usando a função 'super()'. Ela faz a mesma coisa da forma
 #         declarada anteriormente, mas usar essa função é recomendada pois ela é menos propensa a erros.
@@ -65,7 +66,6 @@ print(objeto_filha.nome_pai)  # Saída: "João"
 print(objeto_filha.nome_filha)  # Saída: "Maria"
 
 
-
 #   --> Usando métodos da classe pai na herdeira:
 #       - Chamar métodos da classe pai é parecido com a forma que chamamos os atrbutos.
 #         Assim como mostra o exemplo abaixo.
@@ -88,7 +88,6 @@ objeto_filha.metodo_filha()  # Saída: "Método da classe filha"
 objeto_filha.metodo_pai()  # Saída: "Método da classe pai"
 
 
-
 #   --> Modificando métodos da classe pai na herdeira:
 #       - As vezes, é necessário modificar um método da classe pai para poder usar na herdeira.
 #         então é possível sobreescrever o método na classe filha. Assim, o nome do método continua
@@ -108,7 +107,6 @@ objeto_filha = Filha()
 
 # Chamando o método da classe filha
 objeto_filha.metodo()  # Saída: "Método da classe filha, completamente diferente da classe pai"
-
 
 
 #   --> Criando extensão sem alterar o método da classe pai:
