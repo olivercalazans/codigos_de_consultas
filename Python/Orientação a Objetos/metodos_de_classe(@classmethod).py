@@ -1,3 +1,5 @@
+###### EXPLICAÇÃO GERAL:
+#
 # - Metodos de classe são funções definidas dento de uma classe.
 #
 # - Métodos de classe em Python operam principalmente em variáveis de classe (compartilhadas por todas as instâncias da classe)
