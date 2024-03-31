@@ -1,3 +1,5 @@
+###### EXPLICAÇÃO GERAL:
+#
 # - Em Python, os métodos não precisam do 'set' antes do nome.
 # - E dois ou mais métodos podem ter o mesmo nome, desde que o decorador seja diferente.
 
@@ -14,10 +16,9 @@ class Caneta:
         self._cor = nova_cor
 
 # No exemplo acima, dois métodos tem o nome 'cor', mas o decorador de um é o @property e do outro
-#   é o 'cor.setter'.
+# é o 'cor.setter'.
 # É necessário que um dos métodos tenha o @property para que o outro possa receber '<nome>.setter'.
         
-
 
 # - Também é possível usar o setter no __init__.
 # - Pode ser uma boa prática em certas ocasiões.
