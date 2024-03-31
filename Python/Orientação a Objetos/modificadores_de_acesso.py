@@ -1,3 +1,5 @@
+###### EXPLICAÇÃO GERAL:
+#
 # - Os modificadores do encapsulamento em Python são diferntes de outas linguagens.
 # - Apesar de ser diferente, há uma convensção que ajuda a "usar" esses conceitos.
 # - Os 3 conceitos são:
@@ -5,6 +7,8 @@
 #           2° Protected
 #           3° Private
 
+### PUBLIC:
+#
 # - O 'public' indica que o(s) atributo(s) pode(m) ser usado(s) em qualquer lugar.
 #       - Pode ser usado dentro da classe;
 #       - Pode ser usado em subclasses;
@@ -19,7 +23,8 @@ class Carro:
         self.cor = cor
 
 
-
+### PROTECTED:
+#
 # - O 'protected' são os atributos são restritos.
 #       - Pode ser usado dentro da classe;
 #       - Pode ser usado em subclasses.
@@ -33,7 +38,8 @@ class Carro:
         self._cor = cor
 
 
-
+### PRIVATE:
+#
 # - O 'private' são os atributos são mais restritos.
 #       - Pode ser usado dentro da classe;
 #       - Não pode ser usado em subclasses.
