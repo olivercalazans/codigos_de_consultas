@@ -1,3 +1,5 @@
+###### EXLICAÇÃO GERAL:
+#
 # - O Python tem uma forma específica dele para criar um getter.
 #
 # - Com o @property, o metodo se comporta como atributo. Ele não usa as parenteses '()'.
@@ -28,7 +30,6 @@ print(caneta2.cor, caneta2.cor_Da_Tampa)
 print(caneta3.cor, caneta3.cor_Da_Tampa)
 
 # No exemplo acima, a função 'cor' foi chamada como um atributo. Ela não usou os parentese '()'.
-
 
 
 # - Em Python, é possível que dois ou mais métodos tenham o mesmo nome, o que vai diferenca eles é
