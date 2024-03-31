@@ -1,4 +1,4 @@
-###### EXLICAÇÃO GERAL:
+###### EXPLICAÇÃO GERAL:
 #
 # - O Python tem uma forma específica dele para criar um getter.
 #
