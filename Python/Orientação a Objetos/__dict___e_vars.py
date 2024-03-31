@@ -1,6 +1,11 @@
-# O "__dict__" e o "vars" são formas de acessar todos os atributos declarados no "__init__".
-# Eles retornam uma dicionário com chaves e valores de acordo como foram declarados.
-# Porém, o "__dict__" pode ser usado para criar, modificar e apagar dados do objeto.
+###### EXPLICAÇÃO GERAL:
+#
+# - O "__dict__" e o "vars" são formas de acessar todos os atributos declarados no "__init__".
+#
+# - Eles retornam uma dicionário com chaves e valores de acordo como foram declarados.
+#
+# - Porém, o "__dict__" pode ser usado para criar, modificar e apagar dados do objeto.
+#
 
 class Pessoa:
     ANO_ATUAL = 2024
