@@ -1,7 +1,9 @@
 ###### EXPLICAÇÃO GERAL:
 #
-# - Polimorfismo é um dos princípios fundamentais da programação orientada a objetos (POO)
-#   que permite que objetos de diferentes tipos sejam tratados de maneira uniforme.
+# - Polimorfismo é um princípio que permite classes derivadas (filhas) de uma mesma superclasse (pai) tenham 
+#   métodos iguais (com a mesma assinatura) mas com comportamentos diferentes.
+#
+# - A assinatura do método = nome e quantidade de parâmetros.
 #
 # - Em python, há dois tipos de polimorfismo:
 #       - Polimorfismo de métodos.
