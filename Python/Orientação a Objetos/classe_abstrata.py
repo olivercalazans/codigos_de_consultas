@@ -69,7 +69,7 @@ class MinhaSubclasse(MinhaClasseAbstrata):
     def propriedade_abstrata(self):
         return self._valor
 
-    @propriedade_abstrata.setter        # O setter tem uma forma especial de chama-lo.
+    @propriedade_abstrata.setter        
     def propriedade_abstrata(self, novo_valor):
         self._valor = novo_valor
 
