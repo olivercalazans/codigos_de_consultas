@@ -1,10 +1,6 @@
- #############
- # SQL NOTES #
- #############
+WARNING: Comands may vary slightly between different database systems (such as MySQL, PostgreSQL, SQL Server, and Oracle)
 
 
-
-####################  BASIC COMANDS: 
 - Creating database........: CREATE DATABASE <database_name>;
 - Removing database........: DROP DATABASE <database_name>;
 - Creating table...........: CREATE TABLE <table_name> (column1 type, comlumn2 type, ...);
