@@ -73,9 +73,11 @@
         - BLOB.............................: A large binary object.
         - TINYBLOB, MEDIUMBLOB, LONGBLOB...: Variants of BLOB for different sizes of binary data.
 
+
 # BOOLEAN DATA TYPE.
 
     - BOOLEAN or BOOL...: A boolean value that can be TRUE or FALSE.
+
 
 # ENUMERATED AND SET DATA TYPES.
 
@@ -84,6 +86,7 @@
 
     - Set:
         - SET....: A set of distinct values, where a column can store any combination of these values.
+
 
 # OTHER DATA TYPES.
 
