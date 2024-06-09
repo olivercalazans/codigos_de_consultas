@@ -1,0 +1,9 @@
+   #############
+   # SQL NOTES #
+   #############
+
+##### BASIC COMANDS:
+- Creating database........: CREATE DATABASE <database_name>;
+- Removing database........: DROP DATABASE <database_name>;
+- Creating table...........: CREATE TABLE <table_name> (column1 type, comlumn2 type, ...);
+- Adding data..............: INSERT INTO <table_name> VALUES (data1, data2, ...), (data1, data2, ...), ... ;
