@@ -39,7 +39,7 @@
     - BOOLEAN or BOOL...: A boolean value that can be TRUE or FALSE.
 
 
-## ENUMERATED AND SET DATA TYPES #### Enumerated:
+## ENUMERATED AND SET DATA TYPES
     - ENUM...: An enumerated set of values, where each value must be explicitly listed.
     - SET....: A set of distinct values, where a column can store any combination of these values.
 
