@@ -14,10 +14,10 @@
 
 
 ## CHARACTER STRING DATA TYPE 
-    - CHAR..........................: A fixed-length character string.
-    - VARCHAR.......................: A variable-length character string.
-    - TEXT..........................: A long text field.
-    - TINYTEXT, MEDIUMTEXT, LONGTEXT: Variants of TEXT for different lengths of text.
+    - CHAR.............................: A fixed-length character string.
+    - VARCHAR..........................: A variable-length character string.
+    - TEXT.............................: A long text field.
+    - TINYTEXT, MEDIUMTEXT, LONGTEXT...: Variants of TEXT for different lengths of text.
 
 
 ## DATE AND TIME DATA TYPES 
