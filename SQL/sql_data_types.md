@@ -1,16 +1,16 @@
-# DATA TYPES #
+# DATA TYPES 
 **WARNING**: Data types may vary slightly between different database systems (such as MySQL, PostgreSQL, SQL Server, and Oracle)
 
 
 ## NUMERIC DATA TYPE 
-    - TINYINT..........: A small integer
-    - SMALLINT.........: A medium-sized integer
-    - MEDIUMINT........: A medium-large integer
-    - INT or INTEGER...: A standard-sized integer
-    - BIGINT...........: A large integer
+    - TINYINT......................: A small integer
+    - SMALLINT.....................: A medium-sized integer
+    - MEDIUMINT....................: A medium-large integer
+    - INT or INTEGER...............: A standard-sized integer
+    - BIGINT.......................: A large integer
     - FLOAT........................: A single-precision floating-point number 
     - DOUBLE or DOUBLE PRECISION...: A double-precision floating-point number
-    - DECIMAL or NUMERIC...: A number with fixed precision and scale, useful for monetary values
+    - DECIMAL or NUMERIC...........: A number with fixed precision and scale, useful for monetary values
 
 
 ## CHARACTER STRING DATA TYPE 
