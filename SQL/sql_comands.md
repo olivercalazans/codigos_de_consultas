@@ -25,10 +25,10 @@
 ### Data
 | *Comand* | *Description* |
 |:------|:------|
-| SELECT columns FROM table_name; | Displays the records from a table |
+| SELECT column_names FROM table_name; | Displays the records from a table |
 | INSERT INTO table_name VALUES (data1, data2, ...), (data1, ...), ... ; | Adds data |
-| UPDATE table_name SET column = value; | Changes values of a column |
-| UPDATE table_name SET column = value WHERE conditions; | Changes secific values of a column |
+| UPDATE table_name SET column_name = value; | Changes values of a column |
+| UPDATE table_name SET column_name = value WHERE conditions; | Changes secific values of a column |
 | DELETE FROM table_name | Deletes all data from a table |
 | DELETE FROM table_name WHERE conditions | Deletes specific data from a table |
 
