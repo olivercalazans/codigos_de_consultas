@@ -7,8 +7,8 @@
 |:------|:------|
 | CREATE DATABASE database_name; | Creates a database |
 | DROP DATABASE database_name; | Removes a database |
-| USE database_name; | Selects a database |
-| SHOW DATABASES; | Displays the databases |
+| USE database_name;(MySQL/MariDB)<br>\c database_name (PostreSQL) | Selects a database |
+| SHOW DATABASES; (MySQL/MariaDB)<br>\l (PostgreSQL) | Displays the databases |
 
 
 ### Table
@@ -16,16 +16,23 @@
 |:------|:------|
 | CREATE TABLE table_name (column1 data_type, ...); | Creates a table |
 | DROP TABLE table_name; | Removes a table |
-| SHOW TABLES; | Displays the tables of a database |
-| ALTER TABLE table_name ADD new_columns data_type; | Adds new columns |
-| ALTER TABLE table_name DROP COLUMN columns; | Removes columns
-| ALTER TABLE table_name ALTER COLUMN column data_type | Changes data type of a column |
+| SHOW TABLES; (MySQL/MariaDB)<br>\d (PostgreSQL) | Displays the tables of a database |
+| ALTER TABLE table_name ADD COLUMN new_columns data_type; | Adds new columns |
+| ALTER TABLE table_name DROP COLUMN columns; | Removes a column |
+| ALTER TABLE table_name ALTER COLUMN column data_type; | Changes data type of a column |
+| ALTER TABLE table_name ADD PRIMARY KEY (column_name); | Adds a primary key |
+| ALTER TABLE table_name DROP CONSTRAINT table_name_key; | Removes a primary key |
+| ALTER TABLE table_name ADD COLUMN column_name data_type REFERENCES table_name(column_name); | Adds a primary key |
+| ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name); | Adds a foreign key |
+| ALTER TABLE table_name ADD UNIQUE (column_name); | Creates a retriction |
+
 
 
 ### Data
 | *Comand* | *Description* |
 |:------|:------|
-| SELECT column_names FROM table_name; | Displays the records from a table |
+| SELECT column_names FROM table_name; | Displays the records from a table |                 
+| SELECT column_names FROM table_name FULL JOIN second_table_name ON table_name.column_key = second_table_name.column_key; | Display the records from two tables using keys |
 | INSERT INTO table_name VALUES (data1, data2, ...), (data1, ...), ... ; | Adds data |
 | UPDATE table_name SET column_name = value; | Changes values of a column |
 | UPDATE table_name SET column_name = value WHERE conditions; | Changes secific values of a column |
