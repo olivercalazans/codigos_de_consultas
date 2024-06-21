@@ -1,112 +1,55 @@
-# DATA TYPES 
-**WARNING**: Data types may vary slightly between different database systems (such as MySQL, PostgreSQL, SQL Server, and Oracle)
-
-
-### NUMERIC DATA TYPE 
-| Data Type | Description |
-|:------|:------|
-| TINYINT | A small integer |
-| SMALLINT | A medium-sized integer | 
-| MEDIUMINT | A medium-large integer |
-| INT or INTEGER | A standard-sized integer |
-| BIGINT | A large integer |
-| FLOAT | A single-precision floating-point number |
-| DOUBLE or DOUBLE PRECISION | A double-precision floating-point number |
-| DECIMAL or NUMERIC | A number with fixed precision and scale, useful for monetary values |
-
-
-### CHARACTER STRING DATA TYPE
-| Data Type | Description |
-|:------|:------|
-| CHAR | A fixed-length character string |
-| VARCHAR | A variable-length character string |
-| TEXT | A long text field |
-| TINYTEXT, MEDIUMTEXT, LONGTEXT | Variants of TEXT for different lengths of text |
-
-
-### DATE AND TIME DATA TYPES
-| Data Type | Description |
-|:------|:------|
-| DATETIME | Combines date and time |
-| TIMESTAMP | A combination of date and time that can be used for timestamping |
-| DATE | A date in the format YYYY-MM-DD |
-| TIME | A time in the format HH:MM:SS |
-| YEAR | A year in the format YYYY |
-
-
-### BINARY DATA TYPES
-| Data Type | Description |
-|:------|:------|
-| BINARY | Fixed-length binary data |
-| VARBINARY | Variable-length binary data |
-| BLOB | A large binary object |
-| TINYBLOB, MEDIUMBLOB, LONGBLOB | Variants of BLOB for different sizes of binary data |
-
-
-### BOOLEAN DATA TYPE
-| Data Type | Description |
-|:------|:------|
-| BOOLEAN or BOOL | A boolean value that can be TRUE or FALSE |
-
-
-### ENUMERATED AND SET DATA TYPES
-| Data Type | Description |
-|:------|:------|
-| ENUM | An enumerated set of values, where each value must be explicitly listed |
-| SET | A set of distinct values, where a column can store any combination of these values |
-
-
-### OTHER DATA TYPES 
-| Data Type | Description |
-|:------|:------|
-| GEOMETRY, POINT, LINESTRING, POLYGON | Spatial data types to store geographic information |
-| JSON | A data type to store JSON-formatted data |
-
-
 # COMANDS
 **WARNING**: Comands may vary slightly between different database systems (such as MySQL, PostgreSQL, SQL Server, and Oracle)
 
 
 ### Database
-| *Comand* | *Description* |
-|:------|:------|
-| CREATE DATABASE database_name; | Creates a database |
-| DROP DATABASE database_name; | Removes a database |
-| USE database_name;(MySQL/MariDB)<br>\c database_name (PostreSQL) | Selects a database |
-| SHOW DATABASES; (MySQL/MariaDB)<br>\l (PostgreSQL) | Displays the databases |
+| *Description* | *DBMS* | *Comand* |
+|:------|:------|:------|
+| Creating a database | MySQL, MariaDB, PostgreSQL | CREATE DATABASE database_name; |
+| Removing a database | MySQL, MariaDB, PostgreSQL | DROP DATABASE database_name;|
+| Selecting a database | MySQL, MariaDB | USE database_name; (PostreSQL) \c database_name |
+| Selecting a database | PostgreSQL | \c database_name |
+| Displaying the databases | MySQL, MariaDB | SHOW DATABASES; |
+| Displaying the databases | PostgreSQL | \l |
+
 
 
 ### Table
-| *Comand* | *Description* |
-|:------|:------|
-| CREATE TABLE table_name (column1 data_type, ...); | Creates a table |
-| DROP TABLE table_name; | Removes a table |
-| SHOW TABLES; (MySQL/MariaDB)<br>\d (PostgreSQL) | Displays the tables of a database |
-| ALTER TABLE table_name ADD COLUMN new_columns data_type; | Adds new columns |
-| ALTER TABLE table_name DROP COLUMN columns; | Removes a column |
-| ALTER TABLE table_name ALTER COLUMN column data_type; | Changes data type of a column |
-| ALTER TABLE table_name ADD PRIMARY KEY (column_name); | Adds a primary key |
-| ALTER TABLE table_name DROP CONSTRAINT table_name_key; | Removes a primary key |
-| ALTER TABLE table_name ADD COLUMN column_name data_type REFERENCES table_name(column_name); | Adds a primary key |
-| ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name); | Adds a foreign key |
-| ALTER TABLE table_name ADD UNIQUE (column_name); | Creates a retriction |
+| *Description* | *DBMS* | *Comand* |
+|:------|:------|:------|
+| Creating a table | MySQL, MariaDB, PostgreSQL | CREATE TABLE table_name (column1 data_type, ...); |
+| Removing a table | MySQL, MariaDB, PostgreSQL | DROP TABLE table_name; |
+| Displaying tables of a database | MySQL, MariaDB | SHOW TABLES; |
+| Displaying tables of a database | PostgreSQL | \d |
+| Adding new columns | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD COLUMN new_columns data_type; |
+| Removing a column | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name DROP COLUMN columns; |
+| Changing data type of a column | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ALTER COLUMN column data_type; |
+| Adding a primary key | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD PRIMARY KEY (column_name); |
+| Adding a primary key while creating a column| MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD COLUMN column_name data_type PRIMARY KEY; |
+| Removing a primary key | MySQL, MariaDB | ALTER TABLE table_name DROP FOREIGN KEY fk_orders_customer_id; |
+| Removing a primary key | PostgreSQL, SQL Server | ALTER TABLE table_name DROP CONSTRAINT table_name_key; |
+| Adding a foreign key | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name); |
+| Adding a foreign key while creating a column | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD COLUMN column_name data_type REFERENCES table_name(column_name); |
+| Removing a foreign key| MySQL, MariaDB | ALTER TABLE table_name DROP FOREIGN KEY constraint_name; |
+| Removing a foreign key| PostgresSQL, SQL server | ALTER TABLE table_name DROP CONSTRAINT constraint_name; |
+| Creating a retriction | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD UNIQUE (column_name); |
 
 
 
 ### Data
-| *Comand* | *Description* |
-|:------|:------|
-| SELECT column_names FROM table_name; | Displays the records from a table |                 
-| SELECT column_names FROM table_name FULL JOIN second_table_name ON table_name.column_key = second_table_name.column_key; | Display the records from two tables using keys |
-| INSERT INTO table_name VALUES (data1, data2, ...), (data1, ...), ... ; | Adds data |
-| UPDATE table_name SET column_name = value; | Changes values of a column |
-| UPDATE table_name SET column_name = value WHERE conditions; | Changes secific values of a column |
-| DELETE FROM table_name | Deletes all data from a table |
-| DELETE FROM table_name WHERE conditions | Deletes specific data from a table |
+| *Description* | *DBMS* | *Comand* |
+|:------|:------|:------|
+| Displays the records from a table | MySQL, MariaDB, PostgreSQL | SELECT column_names FROM table_name; |                 
+| Display the records from two tables using keys | MySQL, MariaDB, PostgreSQL | SELECT column_names FROM table_name FULL JOIN second_table_name ON table_name.column_key = second_table_name.column_key; |
+| Adds data | MySQL, MariaDB, PostgreSQL | INSERT INTO table_name VALUES (data1, data2, ...), (data1, ...), ... ; |
+| Changes values of a column | MySQL, MariaDB, PostgreSQL | UPDATE table_name SET column_name = value; |
+| Changes specific values of a column | MySQL, MariaDB, PostgreSQL | UPDATE table_name SET column_name = value WHERE conditions; |
+| Deletes all data from a table | MySQL, MariaDB, PostgreSQL | DELETE FROM table_name |
+| Deletes specific data from a table | MySQL, MariaDB, PostgreSQL | DELETE FROM table_name WHERE conditions |
 
 
 ### View
-| *Comand* | *Description* |
-|:------|:------|
-| CREATE VIEW view_name SELECT columns FROM table_name; | Creates a view |
-| DROP VIEW view_name; | Deletes a view |
+| *Description* | *DBMS* | *Comand* |
+|:------|:------|:------|
+| Creates a view | MySQL, MariaDB, PostgreSQL | CREATE VIEW view_name SELECT columns FROM table_name; |
+| Deletes a view | MySQL, MariaDB, PostgreSQL | DROP VIEW view_name; |
