@@ -24,8 +24,13 @@
 | Adding new columns | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD COLUMN new_columns data_type; |
 | Removing a column | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name DROP COLUMN columns; |
 | Changing data type of a column | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ALTER COLUMN column data_type; |
+
+### Keys
+| *Description* | *DBMS* | *Comand* |
+|:------|:------|:------|
 | Adding a primary key | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD PRIMARY KEY (column_name); |
 | Adding a primary key while creating a column| MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD COLUMN column_name data_type PRIMARY KEY; |
+| Adding a primary composite key |  MySQL, MariaDB, Oracle, PostgreSQL, SQL Server | ALTER TABLE table_name ADD PRIMARY KEY (column_name1, column_name2); |
 | Removing a primary key | MySQL, MariaDB | ALTER TABLE table_name DROP FOREIGN KEY fk_orders_customer_id; |
 | Removing a primary key | PostgreSQL, SQL Server | ALTER TABLE table_name DROP CONSTRAINT table_name_key; |
 | Adding a foreign key | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name); |
