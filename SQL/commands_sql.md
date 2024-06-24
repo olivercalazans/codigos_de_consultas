@@ -29,7 +29,8 @@
 |:------|:------|:------|
 | Adding new columns | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD COLUMN new_columns data_type; |
 | Removing a column | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name DROP COLUMN columns; |
-| Changing data type of a column | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ALTER COLUMN column data_type; |
+| Changing data type of a column | MySQL, MariaDB | ALTER TABLE table_name MODIFY COLUMN column data_type; |
+| Changing data type of a column | PostgreSQL | ALTER TABLE table_name ALTER COLUMN column data_type; |
 
 
 ### Primary Keys
