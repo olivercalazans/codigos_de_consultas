@@ -13,7 +13,6 @@
 | Displaying the databases | PostgreSQL | \l |
 
 
-
 ### Table
 | *Description* | *DBMS* | *Comand* |
 |:------|:------|:------|
@@ -21,11 +20,19 @@
 | Removing a table | MySQL, MariaDB, PostgreSQL | DROP TABLE table_name; |
 | Displaying tables of a database | MySQL, MariaDB | SHOW TABLES; |
 | Displaying tables of a database | PostgreSQL | \d |
+| Describing a table | MySQL, MariaDB | DESCRIBE table_name; |
+| Describing a table | PostgreSQL | \d table_name |
+
+
+### Columns
+| *Description* | *DBMS* | *Comand* |
+|:------|:------|:------|
 | Adding new columns | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD COLUMN new_columns data_type; |
 | Removing a column | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name DROP COLUMN columns; |
 | Changing data type of a column | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ALTER COLUMN column data_type; |
 
-### Keys
+
+### Primary Keys
 | *Description* | *DBMS* | *Comand* |
 |:------|:------|:------|
 | Adding a primary key | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD PRIMARY KEY (column_name); |
@@ -33,12 +40,16 @@
 | Adding a primary composite key |  MySQL, MariaDB, Oracle, PostgreSQL, SQL Server | ALTER TABLE table_name ADD PRIMARY KEY (column_name1, column_name2); |
 | Removing a primary key | MySQL, MariaDB | ALTER TABLE table_name DROP FOREIGN KEY fk_orders_customer_id; |
 | Removing a primary key | PostgreSQL, SQL Server | ALTER TABLE table_name DROP CONSTRAINT table_name_key; |
+| Creating a retriction | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD UNIQUE (column_name); |
+
+
+### Foreign Keys
+| *Description* | *DBMS* | *Comand* |
+|:------|:------|:------|
 | Adding a foreign key | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name); |
 | Adding a foreign key while creating a column | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD COLUMN column_name data_type REFERENCES table_name(column_name); |
 | Removing a foreign key| MySQL, MariaDB | ALTER TABLE table_name DROP FOREIGN KEY constraint_name; |
 | Removing a foreign key| PostgresSQL, SQL server | ALTER TABLE table_name DROP CONSTRAINT constraint_name; |
-| Creating a retriction | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD UNIQUE (column_name); |
-
 
 
 ### Data
