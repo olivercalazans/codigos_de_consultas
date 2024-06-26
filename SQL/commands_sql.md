@@ -31,6 +31,8 @@
 | Removing a column | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name DROP COLUMN columns; |
 | Changing data type of a column | MySQL, MariaDB | ALTER TABLE table_name MODIFY COLUMN column data_type; |
 | Changing data type of a column | PostgreSQL | ALTER TABLE table_name ALTER COLUMN column data_type; |
+| Setting column as not null| MySQL, MariaDB | ALTER TABLE table_name MODIFY column_name data_type NOT NULL |
+| Setting column as not null| PostgreSQL | ALTER TABLE table_name ALTER COLUMN column_name SET NOT NULL |
 | Adding auto-incrementing column | MySQL, MariaDB | ALTER TABLE table_name ADD COLUMN column_name INT NOT NULL AUTO_INCREMENT PRIMARY KEY; |
 | Changing column to be auto-incrementable | MySQL, MariaDB | ALTER TABLE table_name MODIFY COLUMN column_name INT NOT NULL AUTO_INCREMENT; |
 | Setting initial number of the increment | MySQL, MariaDB | ALTER TABLE table_name AUTO_INCREMENT = number; |
@@ -50,7 +52,8 @@
 ### Foreign Keys
 | *Description* | *DBMS* | *Comand* |
 |:------|:------|:------|
-| Adding a foreign key | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name); |
+| Adding a foreign key | MySQL, MariaDB | ALTER TABLE table_name ADD FOREIGN KEY(column_name) REFERENCES table_name(column_name); |
+| Adding a foreign key | PostgreSQL | ALTER TABLE table_name ADD CONSTRAINT fk_key_name FOREIGN KEY (column_name) REFERENCES table_name(column_name); |
 | Adding a foreign key while creating a column | MySQL, MariaDB, PostgreSQL | ALTER TABLE table_name ADD COLUMN column_name data_type REFERENCES table_name(column_name); |
 | Removing a foreign key| MySQL, MariaDB | ALTER TABLE table_name DROP FOREIGN KEY constraint_name; |
 | Removing a foreign key| PostgresSQL, SQL server | ALTER TABLE table_name DROP CONSTRAINT constraint_name; |
