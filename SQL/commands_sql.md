@@ -7,6 +7,7 @@
 |:------|:------|:------|
 | Creating a database | MySQL, MariaDB, PostgreSQL | CREATE DATABASE database_name; |
 | Removing a database | MySQL, MariaDB, PostgreSQL | DROP DATABASE database_name;|
+| Renaming a database | PostgreSQL | ALTER DATABASE database_name RENAME TO new_database_name; |
 | Selecting a database | MySQL, MariaDB | USE database_name; |
 | Selecting a database | PostgreSQL | \c database_name |
 | Displaying the databases | MySQL, MariaDB | SHOW DATABASES; |
