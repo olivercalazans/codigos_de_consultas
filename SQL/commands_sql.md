@@ -17,6 +17,8 @@
 | *Description* | *DBMS* | *Comand* |
 |:------|:------|:------|
 | Creating a table | MySQL, MariaDB, PostgreSQL | CREATE TABLE table_name (column1 data_type, ...); |
+| Create a table with the same structure as another table | MySQL, MariaDB | CREATE TABLE table_name LIKE source_table; |
+| Create a table with the same structure as another table | PostgreSQL | CREATE TABLE table_name AS TABLE source_table WITH NO DATA; |
 | Removing a table | MySQL, MariaDB, PostgreSQL | DROP TABLE table_name; |
 | Displaying tables of a database | MySQL, MariaDB | SHOW TABLES; |
 | Displaying tables of a database | PostgreSQL | \d |
@@ -62,14 +64,18 @@
 ### Data
 | *Description* | *DBMS* | *Comand* |
 |:------|:------|:------|
-| Displays the records from a table | MySQL, MariaDB, PostgreSQL | SELECT column_names FROM table_name; |                 
-| Display the records from two tables using keys | MySQL, MariaDB, PostgreSQL | SELECT column_names FROM table_name FULL JOIN second_table_name ON table_name.column_key = second_table_name.column_key; |
-| Adds data | MySQL, MariaDB, PostgreSQL | INSERT INTO table_name VALUES (data1, data2, ...), (data1, ...), ... ; |
-| Changes values of a column | MySQL, MariaDB, PostgreSQL | UPDATE table_name SET column_name = value; |
-| Changes specific values of a column | MySQL, MariaDB, PostgreSQL | UPDATE table_name SET column_name = value WHERE conditions; |
-| Deletes all data from a table | MySQL, MariaDB, PostgreSQL | DELETE FROM table_name |
-| Deletes specific data from a table | MySQL, MariaDB, PostgreSQL | DELETE FROM table_name WHERE conditions |
+| Displaying the records from a table | MySQL, MariaDB, PostgreSQL | SELECT column_names FROM table_name; |
+| Adding data | MySQL, MariaDB, PostgreSQL | INSERT INTO table_name VALUES (data1, data2, ...), (data1, ...), ... ; |
+| Adding data from another table | MySQL, MariaDB, PostgreSQL | INSERT INTO table_name (columns) SELECT columns FROM source_table; |
+| Changing values of a column | MySQL, MariaDB, PostgreSQL | UPDATE table_name SET column_name = value; |
+| Changing specific values of a column | MySQL, MariaDB, PostgreSQL | UPDATE table_name SET column_name = value WHERE conditions; |
+| Deleting all data from a table | MySQL, MariaDB, PostgreSQL | DELETE FROM table_name |
+| Deleting specific data from a table | MySQL, MariaDB, PostgreSQL | DELETE FROM table_name WHERE conditions |
 
+### Joins
+| *Description* | *DBMS* | *Comand* |
+|:------|:------|:------|
+| Full join | MySQL, MariaDB, PostgreSQL | SELECT column_names FROM table_name FULL JOIN second_table_name ON table_name.column_key = second_table_name.column_key; |
 
 ### View
 | *Description* | *DBMS* | *Comand* |
